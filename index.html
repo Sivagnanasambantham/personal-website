@@ -1,74 +1,342 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Siva Personal Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Siva | Personal Website</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            line-height: 1.6;
+        }
+
+
+        /* Navigation Bar */
+
+        nav {
+            background: rgba(0,0,0,0.6);
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00ffff;
+        }
+
+
+        /* Main Container */
+
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+
+        /* Profile Section */
+
+        .profile {
+            text-align: center;
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #00ffff;
+            object-fit: cover;
+        }
+
+
+        h1 {
+            font-size: 45px;
+            margin: 15px;
+        }
+
+
+        h2 {
+            color: #00ffff;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #00ffff;
+            display: inline-block;
+        }
+
+
+        section {
+            background: rgba(255,255,255,0.08);
+            padding: 25px;
+            margin-top: 30px;
+            border-radius: 15px;
+        }
+
+
+        /* Table */
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+
+        th {
+            background: #00ffff;
+            color: black;
+        }
+
+
+        td, th {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid white;
+        }
+
+
+        /* Hobbies */
+
+        ul {
+            list-style-type: square;
+            padding-left: 30px;
+        }
+
+
+        li {
+            margin: 10px;
+            font-size: 18px;
+        }
+
+
+        /* Form */
+
+        input, textarea {
+
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+
+        }
+
+
+        textarea {
+            height: 120px;
+        }
+
+
+        input[type="submit"] {
+
+            background: #00ffff;
+            color: black;
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: bold;
+
+        }
+
+
+        input[type="submit"]:hover {
+
+            background: white;
+
+        }
+
+
+        footer {
+
+            text-align:center;
+            padding:20px;
+            background:black;
+            margin-top:40px;
+
+        }
+
+
+    </style>
+
 </head>
+
 
 <body>
 
+
+<nav>
+
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#hobbies">Hobbies</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+
+
+<div class="container">
+
+
+<div class="profile">
+
 <h1>Siva</h1>
 
-<img src="profile.jpeg" width="200">
+<img src="profile.jpeg" alt="Siva Profile Photo">
+
+<p>
+MCA Student | Web Developer | AI Enthusiast
+</p>
+
+</div>
+
+
+
+
+<section id="about">
 
 <h2>About Me</h2>
 
 <p>
-I am Siva. I am pursuing MCA.
-I am interested in Web Development &amp; Artificial Intelligence.
+Hello! I am Siva, currently pursuing Master of Computer Applications (MCA).
+I am passionate about Web Development, Artificial Intelligence,
+and learning new technologies.
+I enjoy creating projects and improving my programming skills.
 </p>
 
-<hr>
+</section>
+
+
+
+
+
+<section id="education">
 
 <h2>Education</h2>
 
-<table border="1">
+
+<table>
 
 <tr>
 <th>Course</th>
+<th>Institution</th>
 <th>Year</th>
 </tr>
 
+
 <tr>
 <td>MCA</td>
-<td>2025-Present</td>
+<td>Computer Applications</td>
+<td>2025 - Present</td>
 </tr>
+
 
 </table>
 
-<hr>
 
-<h2>Hobbies</h2>
+</section>
+
+
+
+
+
+<section id="hobbies">
+
+<h2>My Hobbies</h2>
+
 
 <ul>
-<li>Gym</li>
-<li>Programming</li>
-<li>Photography</li>
+
+<li>💻 Programming</li>
+<li>🏋️ Fitness & Gym</li>
+<li>📷 Photography</li>
+<li>🤖 Artificial Intelligence</li>
+
 </ul>
 
-<hr>
 
-<h2>Contact</h2>
+</section>
+
+
+
+
+
+<section id="contact">
+
+
+<h2>Contact Me</h2>
+
 
 <form>
 
-Name:
-<input type="text">
 
-<br><br>
+<label>Name</label>
 
-Email:
-<input type="email">
+<input type="text" placeholder="Enter your name">
 
-<br><br>
 
-Message:
-<textarea></textarea>
 
-<br><br>
+<label>Email</label>
 
-<input type="submit">
+<input type="email" placeholder="Enter your email">
+
+
+
+<label>Message</label>
+
+<textarea placeholder="Write your message"></textarea>
+
+
+
+<input type="submit" value="Send Message">
+
 
 </form>
 
+
+</section>
+
+
+
+</div>
+
+
+
+
+<footer>
+
+<p>
+© 2026 Siva | Personal Website
+</p>
+
+</footer>
+
+
+
 </body>
+
 </html>
